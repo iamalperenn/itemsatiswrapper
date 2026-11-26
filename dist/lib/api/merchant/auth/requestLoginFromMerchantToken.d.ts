@@ -1,0 +1,85 @@
+type checkLogin = {
+    request: {
+        token: string;
+    };
+    response: {
+        success: boolean;
+        message: string;
+        err: number;
+        mobile_check: boolean;
+        result: {
+            Id: number;
+            UserName: string;
+            MailAdress: string;
+            Avatar: string;
+            Cover: string;
+            Balance: number;
+            Phone: number;
+            Name: string;
+            SurName: string;
+            PhoneVerify: number;
+            UserType: number;
+            Approved: number;
+            PositiveRep: number;
+            RegisterDate: string;
+            Birthday: string;
+            BirthdayMd: string;
+            MailVerify: boolean;
+            IdentityVerify: boolean;
+            isChat: boolean;
+            checkStreamer: boolean;
+            firstStreamer: boolean;
+            AvatarFrame: string;
+            isCorporte: boolean;
+            salesCount: number;
+            isSellerPanelAccess: boolean;
+            isStorePrivileged: boolean;
+            canAccessPanel: boolean;
+            risklyProduct: number;
+        };
+        token: string;
+        SocketToken: string;
+        isBirthday: boolean;
+    };
+};
+export declare function requestLoginFromMerchantToken(token: checkLogin["request"]["token"]): Promise<{
+    success: boolean;
+    message: string;
+    err: number;
+    mobile_check: boolean;
+    result: {
+        Id: number;
+        UserName: string;
+        MailAdress: string;
+        Avatar: string;
+        Cover: string;
+        Balance: number;
+        Phone: number;
+        Name: string;
+        SurName: string;
+        PhoneVerify: number;
+        UserType: number;
+        Approved: number;
+        PositiveRep: number;
+        RegisterDate: string;
+        Birthday: string;
+        BirthdayMd: string;
+        MailVerify: boolean;
+        IdentityVerify: boolean;
+        isChat: boolean;
+        checkStreamer: boolean;
+        firstStreamer: boolean;
+        AvatarFrame: string;
+        isCorporte: boolean;
+        salesCount: number;
+        isSellerPanelAccess: boolean;
+        isStorePrivileged: boolean;
+        canAccessPanel: boolean;
+        risklyProduct: number;
+    };
+    token: string;
+    SocketToken: string;
+    isBirthday: boolean;
+} | import("../../../helpers/merchant/merchantErrorHandler.js").ApiResult<never> | undefined>;
+export {};
+//# sourceMappingURL=requestLoginFromMerchantToken.d.ts.map
